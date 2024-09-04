@@ -4,13 +4,13 @@ from pydantic import BaseModel, validator
 class CropRecommendation(BaseModel):
     """Crop recommendation model"""
 
-    nitrogen: float = 0.0  # Nitrogen level in soil (kg/ha)
-    phosporus: float = 0.0  # Phosporus level in soil (kg/ha)
-    potassium: float = 0.0  # Potassium level in soil (kg/ha)
-    temperature: float = 0.0  # Average temperature (°C)
-    humidity: float = 0.0  # Average humidity (%)
-    ph: float = 0.0  # Soil pH
-    rainfall: float = 0.0  # Average rainfall (mm)
+    nitrogen: float = 0.0  
+    phosporus: float = 0.0  
+    potassium: float = 0.0  
+    temperature: float = 0.0  
+    humidity: float = 0.0  
+    ph: float = 0.0  
+    rainfall: float = 0.0  
 
     @validator(
         "nitrogen",
